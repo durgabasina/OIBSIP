@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+
+            body{
+                margin:0;
+                width: 100%;
+                height:100vh;
+            }
+            #one
+            {
+                background-color: black;
+                height:57.5px;
+                background-image: url("data:image/jpeg;base64,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");
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 100%;
+                
+            }
+            
+            #t{
+                color: Black;
+                font-size: 37px;
+                margin-top:7px;
+                
+            }
+            a{
+                /* text-decoration: none; */
+                margin-right:60px ;
+
+                color:Black;
+                display:block;
+                padding: 7px;
+            }
+            #two
+            {
+                text-align: center;
+                float: left;
+                width:30%;
+                height:60px;
+            }
+        ul{
+        
+            position: fixed;
+            top:0;
+            left: -30px;
+            width:100%;  
+        }
+        li{
+            display: inline;
+            width: 80px;
+            text-align: center;
+            float: right;
+            /* border-left: 2px solid #bbb; */
+            cursor:pointer;
+        }
+        li:hover{
+            /* background-color: rgb(150, 220, 150); */
+            color:white;
+        }
+        /* li:last-child {
+            border-right: 1px solid #bbb;
+        } */
+        a:hover{
+            text-decoration:underline;
+            transform:scale(1.09)
+        }
+
+        img{
+            background-size: cover;
+            width: 80%;
+            float: left;
+            border-radius:30px;
+        }
+        table{
+            
+            padding: 1px;
+            /* border-radius: 10%; */
+            border: 10px groove black;
+            
+        }
+        
+        button{
+            padding: 20px;
+            margin: 30%;
+            border-radius: 10%;
+            background-color: green;
+            color: white;
+            cursor:pointer;
+            
+        }
+        button:hover{
+            background-color:#0e572b;
+        }
+        h1{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: red;
+            
+        }
+        h2{
+            font-size: 25px; 
+            color:#00FFFF;  
+            margin-top:50px;
+        }
+        .area {
+        display: grid;
+        gap: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        border: 2px solid black;
+        }
+
+        .box1{
+            border: 2px solid black;
+        }
+        #heading{
+            color:red;
+            animation: blink 2s steps(1, end) infinite;
+        }
+        @keyframes blink {
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+        }
+        #img1{
+            background-image: url("C:\\Users\\USER\\Downloads\\fern-foliage-plant-nature.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .mark{
+            color:#000000;
+            background-color:yellow;
+            border-radius:7px;
+            margin-right:8px;
+        }
+
+
+ </style>
+    </head>
+    <body>
+        <nav>
+        <div id="one">
+            <div id="two">
+                <h2 id="t">
+                    Organico
+                </h2></div>
+                <div id="three" >
+                   <ul>
+                    <li><a>Login</a></li>
+                    <li><a>Signup</a></li>
+                    <li><a>Contact</a></li>
+                    <li><a>About</a></li>
+                   </ul> 
+            </div>
+        </div>
+    </nav>
+
+  <div id="img1"><br>
+     <table align="center" id="area" >
+        
+        <tr align="center">
+            <marquee direction="alternate"><h1 align="center"> - GET EXACTLY WHAT YOU NEED IN A HALF THE TIME..</h1></marquee>
+
+            <td><img src="https://images.pexels.com/photos/1660027/pexels-photo-1660027.jpeg?auto=compress&cs=tinysrgb&w=600"></td>
+            <td align="center"><h1 class="mark">ORGANIC FOOD</h1>
+            <h2><i>The freshest and tastiest around.</i></h2>
+            <h2><i> Raised without antibiotics or hormones.</i></h2>
+            <h2><i> The best choice for you and your family.</i></h2>
+            <h2><i> Make the switch to organic today.</i></h2>
+            <button type="submit" >Order Now</button>
+             </td>
+   
+        </tr>
+     </table>
+     <blink> <h1 align="center" id="heading">Hurry Up!!</h1></blink>
+    </div>
+    </body>
+        
+</html>
